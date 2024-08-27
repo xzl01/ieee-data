@@ -1,3 +1,36 @@
+ieee-data (20240722) unstable; urgency=medium
+
+  * Team upload.
+  * Update all files from ieee
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Remove 1 maintscript entries from 1 files.
+
+ -- Leonardo Gonçalves Machado <leonardogm2003@gmail.com>  Mon, 22 Jul 2024 10:25:21 -0300
+
+ieee-data (20220827.1) unstable; urgency=medium
+
+  [ Ileana Dumitrescu ]
+  * update-ieee-data: Update URLs (Closes: #1004709)
+  * d/control:
+    - Standards-Version updated to 4.6.1
+    - Updated to dh-compat version 13
+
+  [ Samuel Henrique ]
+  * Update all files from ieee
+  * update-ieee-data:
+    - Use https to download files
+    - Switch from tempfile to mktemp, as per deprecation notice
+    - Switch from echo to printf, to avoid bashism when printing \t
+    - Fix shellcheck findings and use 'command -v' instead of 'which'
+    - Update copyright notice
+  * d/control: Set Rules-Requires-Root: no
+  * d/copyright: Update file
+  * wrap-and-sort -a
+
+ -- Samuel Henrique <samueloph@debian.org>  Sat, 27 Aug 2022 21:16:50 +0100
+
 ieee-data (20210605.1) unstable; urgency=medium
 
   * Update all txt and cvs files with data from Jun 05
